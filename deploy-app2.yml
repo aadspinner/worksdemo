@@ -1,0 +1,15 @@
+name: Deploy App1 to Render
+on:
+  push:
+    paths:
+      - 'apps/app2/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Render Deploy Hook
+        run: |
+          curl "$RENDER_DEPLOY_HOOK_URL_APP2"
+        env:
+          RENDER_DEPLOY_HOOK_URL_APP2: ${{ secrets.RENDER_DEPLOY_HOOK_URL_APP2 }}
