@@ -1,6 +1,6 @@
 import React from 'react';
 const apps = [
-  { id: 1, title: "Demo App 1", url: "https://app1.yourdomain.com" },
+  { id: 1, title: "Demo App 1", url: "https://app1-zjlq.onrender.com" },
   { id: 2, title: "Demo App 2", url: "https://app2.yourdomain.com" },
   { id: 3, title: "Demo App 3", url: "https://app3.yourdomain.com" },
   { id: 4, title: "Demo App 4", url: "https://app4.yourdomain.com" },
